@@ -66,6 +66,7 @@ script: |
         echo "export FAKETIME=\"$1\"" >> ${WRAP_DIR}/${i}-${prog}
         echo "\$REAL \$@" >> $WRAP_DIR/${i}-${prog}
         chmod +x ${WRAP_DIR}/${i}-${prog}
+        chmod +x /home/ubuntu/build/posq/depends/config.sub
     done
   done
   }
